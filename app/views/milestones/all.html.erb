@@ -4,7 +4,7 @@
   <%= render 'projects/header' %>
   <div class="well">
     <%= grid(@milestones_grid, upper_pagination_panel: true, show_filters: :always) do |g|
-        g.column name: 'Nombre', attribute: 'name'
+        g.column name: 'Identificador', attribute: 'name'
 
         g.column name: 'Tipo de elemento', attribute: 'type_of_milestone', custom_filter: :auto
 

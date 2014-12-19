@@ -13,10 +13,6 @@
                   :class => (current_page?(project_acts_path(@project))) ?
                           'btn btn-default active' : 'btn btn-default',
                   id: 'actas' %>
-      <%= link_to 'Libro de acuerdos', project_agreements_path(@project),
-                  :class => (current_page?(project_agreements_path(@project))) ?
-                          'btn btn-default active' : 'btn btn-default',
-                  id: 'libro' %>
       <%= link_to 'Síntesis díalogica', project_milestones_path(@project,wice_grid_custom_filter_params(
                                                                         grid_name: 'grid',
                                                                         attribute: 'users.id',
